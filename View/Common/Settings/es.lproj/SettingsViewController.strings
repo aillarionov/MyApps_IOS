@@ -1,0 +1,15 @@
+
+/* Class = "UIButton"; normalTitle = "Clean images"; ObjectID = "Iya-R6-l26"; */
+"Iya-R6-l26.normalTitle" = "Clean images";
+
+/* Class = "UISegmentedControl"; Tuq-xI-gkc.segmentTitles[0] = "Visitor"; ObjectID = "Tuq-xI-gkc"; */
+"Tuq-xI-gkc.segmentTitles[0]" = "Visitor";
+
+/* Class = "UISegmentedControl"; Tuq-xI-gkc.segmentTitles[1] = "Presenter"; ObjectID = "Tuq-xI-gkc"; */
+"Tuq-xI-gkc.segmentTitles[1]" = "Presenter";
+
+/* Class = "UIButton"; normalTitle = "Load images"; ObjectID = "Yc4-n1-G30"; */
+"Yc4-n1-G30.normalTitle" = "Load images";
+
+/* Class = "UIButton"; normalTitle = "Delete group"; ObjectID = "ftd-po-mC0"; */
+"ftd-po-mC0.normalTitle" = "Delete group";

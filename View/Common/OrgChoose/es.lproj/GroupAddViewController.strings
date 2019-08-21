@@ -1,0 +1,21 @@
+
+/* Class = "UILabel"; text = "Input code"; ObjectID = "2cZ-YW-sxj"; */
+"2cZ-YW-sxj.text" = "Input code";
+
+/* Class = "UILabel"; text = " "; ObjectID = "4uo-Vu-CvE"; */
+"4uo-Vu-CvE.text" = " ";
+
+/* Class = "UILabel"; text = "or"; ObjectID = "6WZ-ic-WFC"; */
+"6WZ-ic-WFC.text" = "or";
+
+/* Class = "UILabel"; text = " "; ObjectID = "VmC-MG-ttk"; */
+"VmC-MG-ttk.text" = " ";
+
+/* Class = "UILabel"; text = "or"; ObjectID = "ZIB-va-1Fq"; */
+"ZIB-va-1Fq.text" = "or";
+
+/* Class = "UIButton"; normalTitle = "Scan QR code"; ObjectID = "pZC-9X-d3j"; */
+"pZC-9X-d3j.normalTitle" = "Scan QR code";
+
+/* Class = "UIButton"; normalTitle = "Choose from list"; ObjectID = "rrw-pX-w11"; */
+"rrw-pX-w11.normalTitle" = "Choose from list";

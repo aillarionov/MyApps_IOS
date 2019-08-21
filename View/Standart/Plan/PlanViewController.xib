@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PlanViewController" customModule="Inform" customModuleProvider="target">
+            <connections>
+                <outlet property="header" destination="dk3-An-Tna" id="2vg-BZ-piI"/>
+                <outlet property="headerConstraint" destination="Muk-2i-9n6" id="wfR-7w-sP2"/>
+                <outlet property="image" destination="eLH-7s-FPk" id="qzv-o2-RV2"/>
+                <outlet property="scrollView" destination="OVQ-Mv-dCZ" id="5Dc-b3-qzc"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="dk3-An-Tna">
+                    <rect key="frame" x="146" y="24" width="29" height="29"/>
+                    <segments>
+                        <segment title=""/>
+                        <segment title=""/>
+                    </segments>
+                    <connections>
+                        <action selector="headerSelected:" destination="-1" eventType="valueChanged" id="bAk-Lr-xBI"/>
+                    </connections>
+                </segmentedControl>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OVQ-Mv-dCZ">
+                    <rect key="frame" x="0.0" y="60" width="320" height="508"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eLH-7s-FPk">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="508"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="508" placeholder="YES" id="5G3-aE-qry"/>
+                                <constraint firstAttribute="width" constant="320" placeholder="YES" id="85m-W5-A0W"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="eLH-7s-FPk" secondAttribute="trailing" id="3ff-ST-xYu"/>
+                        <constraint firstAttribute="bottom" secondItem="eLH-7s-FPk" secondAttribute="bottom" id="PmZ-XL-HJq"/>
+                        <constraint firstAttribute="top" secondItem="eLH-7s-FPk" secondAttribute="top" id="SUR-jc-024"/>
+                        <constraint firstAttribute="leading" secondItem="eLH-7s-FPk" secondAttribute="leading" id="lVH-6r-QIT"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="dk3-An-Tna" firstAttribute="width" relation="lessThanOrEqual" secondItem="i5M-Pr-FkT" secondAttribute="width" constant="-8" id="0Kk-jD-2bu"/>
+                <constraint firstItem="OVQ-Mv-dCZ" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="6ya-o3-oWl"/>
+                <constraint firstItem="dk3-An-Tna" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Aon-9r-eaz"/>
+                <constraint firstItem="OVQ-Mv-dCZ" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="EDz-zw-p79"/>
+                <constraint firstItem="OVQ-Mv-dCZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="LA2-GB-C9o"/>
+                <constraint firstItem="OVQ-Mv-dCZ" firstAttribute="top" secondItem="dk3-An-Tna" secondAttribute="bottom" constant="8" id="Muk-2i-9n6"/>
+                <constraint firstItem="dk3-An-Tna" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="4" id="cbA-sF-o7e"/>
+                <constraint firstItem="OVQ-Mv-dCZ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" priority="250" id="vxC-26-d36"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="24" y="52"/>
+        </view>
+    </objects>
+</document>

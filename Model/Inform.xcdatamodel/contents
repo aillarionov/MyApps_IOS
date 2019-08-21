@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14133" systemVersion="17E202" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Catalog" syncable="YES">
+        <attribute name="id" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="lastChange" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="orgId" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="presenterVisible" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="type" attributeType="Transformable" syncable="YES"/>
+        <attribute name="ver" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="visitorVisible" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <entity name="CatalogImage" syncable="YES">
+        <attribute name="catalogId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="itemId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="orgId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="pictures" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="ver" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <fetchedProperty name="favorite" optional="YES" syncable="YES">
+            <fetchRequest name="fetchedPropertyFetchRequest" entity="Favorite" predicateString="id == $FETCH_SOURCE.id"/>
+        </fetchedProperty>
+    </entity>
+    <entity name="CatalogItem" syncable="YES">
+        <attribute name="catalogId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="itemId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="orgId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="pictures" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="raw" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ver" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <fetchedProperty name="favorite" optional="YES" syncable="YES">
+            <fetchRequest name="fetchedPropertyFetchRequest" entity="Favorite" predicateString="id == $FETCH_SOURCE.id"/>
+        </fetchedProperty>
+    </entity>
+    <entity name="CatalogMember" syncable="YES">
+        <attribute name="catalogId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="categories" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="emails" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="fbs" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="insts" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="itemId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="orgId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="phones" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="pictures" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="raw" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sites" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="stand" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ver" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="vks" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <fetchedProperty name="favorite" optional="YES" syncable="YES">
+            <fetchRequest name="fetchedPropertyFetchRequest" entity="Favorite" predicateString="id == $FETCH_SOURCE.id"/>
+        </fetchedProperty>
+    </entity>
+    <entity name="CatalogNews" syncable="YES">
+        <attribute name="catalogId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="itemId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="orgId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="pictures" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="raw" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ver" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <fetchedProperty name="favorite" optional="YES" syncable="YES">
+            <fetchRequest name="fetchedPropertyFetchRequest" entity="Favorite" predicateString="id == $FETCH_SOURCE.id"/>
+        </fetchedProperty>
+    </entity>
+    <entity name="Favorite" syncable="YES">
+        <attribute name="catalogId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="itemId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="orgId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="ver" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <fetchedProperty name="image" optional="YES" syncable="YES">
+            <fetchRequest name="fetchedPropertyFetchRequest" entity="CatalogImage" predicateString="id == $FETCH_SOURCE.id"/>
+        </fetchedProperty>
+        <fetchedProperty name="item" optional="YES" syncable="YES">
+            <fetchRequest name="fetchedPropertyFetchRequest" entity="CatalogItem" predicateString="id == $FETCH_SOURCE.id"/>
+        </fetchedProperty>
+        <fetchedProperty name="member" optional="YES" syncable="YES">
+            <fetchRequest name="fetchedPropertyFetchRequest" entity="CatalogMember" predicateString="id == $FETCH_SOURCE.id"/>
+        </fetchedProperty>
+        <fetchedProperty name="news" optional="YES" syncable="YES">
+            <fetchRequest name="fetchedPropertyFetchRequest" entity="CatalogNews" predicateString="id == $FETCH_SOURCE.id"/>
+        </fetchedProperty>
+    </entity>
+    <entity name="Form" syncable="YES">
+        <attribute name="id" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <attribute name="orgId" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="ver" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <entity name="FormItem" syncable="YES">
+        <attribute name="formId" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="id" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <attribute name="order" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="orgId" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="params" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="required" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="title" attributeType="String" syncable="YES"/>
+        <attribute name="type" attributeType="Transformable" syncable="YES"/>
+        <attribute name="ver" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <entity name="MenuItem" syncable="YES">
+        <attribute name="icon" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <attribute name="order" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="orgId" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="params" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="type" attributeType="Transformable" syncable="YES"/>
+        <attribute name="ver" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <entity name="Org" syncable="YES">
+        <attribute name="city" optional="YES" attributeType="Transformable" customClassName="." syncable="YES"/>
+        <attribute name="id" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="logo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <attribute name="ver" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <entity name="Settings" syncable="YES">
+        <attribute name="id" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isPresenter" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isVisitor" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="receiveNotifications" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="ver" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <fetchedProperty name="org" optional="YES" syncable="YES">
+            <fetchRequest name="fetchedPropertyFetchRequest" entity="Org" predicateString="id == $FETCH_SOURCE.id"/>
+        </fetchedProperty>
+    </entity>
+    <entity name="Ticket" syncable="YES">
+        <attribute name="button" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="source" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" attributeType="Transformable" syncable="YES"/>
+        <attribute name="ver" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Catalog" positionX="7" positionY="276" width="128" height="150"/>
+        <element name="CatalogImage" positionX="-353" positionY="639" width="128" height="194"/>
+        <element name="CatalogItem" positionX="-344" positionY="-108" width="128" height="224"/>
+        <element name="CatalogMember" positionX="-342" positionY="297" width="128" height="359"/>
+        <element name="CatalogNews" positionX="-342" positionY="108" width="128" height="224"/>
+        <element name="Favorite" positionX="-695" positionY="315" width="128" height="194"/>
+        <element name="Form" positionX="315" positionY="-135" width="128" height="105"/>
+        <element name="FormItem" positionX="315" positionY="0" width="128" height="195"/>
+        <element name="MenuItem" positionX="70" positionY="-24" width="128" height="165"/>
+        <element name="Org" positionX="-137" positionY="-27" width="128" height="120"/>
+        <element name="Settings" positionX="-495" positionY="9" width="128" height="149"/>
+        <element name="Ticket" positionX="-477" positionY="27" width="128" height="135"/>
+    </elements>
+</model>
